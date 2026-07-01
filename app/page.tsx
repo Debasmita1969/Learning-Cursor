@@ -25,6 +25,26 @@ export default function Home() {
 
   return (
     <div className={`${styles.container} ${instrumentSans.className}`}>
+      {/* Sky — flocks of birds gliding at different depths */}
+      <div className={styles.sky} aria-hidden="true">
+        <svg className={`${styles.flock} ${styles.flock1}`} viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+          <path className={styles.bird} d="M2,20 Q7,13 12,20 Q17,13 22,20" />
+          <path className={styles.bird} d="M34,12 Q39,6 44,12 Q49,6 54,12" />
+          <path className={styles.bird} d="M60,24 Q65,18 70,24 Q75,18 80,24" />
+          <path className={styles.bird} d="M92,15 Q96,10 100,15 Q104,10 108,15" />
+        </svg>
+        <svg className={`${styles.flock} ${styles.flock2}`} viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+          <path className={styles.bird} d="M6,10 Q10,5 14,10 Q18,5 22,10" />
+          <path className={styles.bird} d="M40,22 Q45,16 50,22 Q55,16 60,22" />
+          <path className={styles.bird} d="M74,14 Q78,9 82,14 Q86,9 90,14" />
+        </svg>
+        <svg className={`${styles.flock} ${styles.flock3}`} viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+          <path className={styles.bird} d="M10,18 Q14,13 18,18 Q22,13 26,18" />
+          <path className={styles.bird} d="M46,10 Q50,6 54,10 Q58,6 62,10" />
+          <path className={styles.bird} d="M80,20 Q85,14 90,20 Q95,14 100,20" />
+        </svg>
+      </div>
+
       <header className={styles.header}>
         <p className={styles.label}>a collection of experiments</p>
         <h1 className={playfairDisplay.className}>Prototypes</h1>
@@ -58,6 +78,12 @@ export default function Home() {
         </svg>
         <svg className={`${styles.wave} ${styles.wave3}`} viewBox="0 0 2880 55" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
           <path fill="rgba(200, 222, 234, 0.12)" d="M0,28 Q360,8 720,28 Q1080,48 1440,28 Q1800,8 2160,28 Q2520,48 2880,28 L2880,55 L0,55 Z" />
+        </svg>
+
+        {/* Foam edge gushing up the sand and receding */}
+        <svg className={styles.foam} viewBox="0 0 2880 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path fill="rgba(255,255,255,0.72)" d="M0,34 Q240,14 480,30 Q720,46 960,28 Q1200,12 1440,30 Q1680,48 1920,30 Q2160,14 2400,32 Q2640,48 2880,30 L2880,60 L0,60 Z" />
+          <path fill="none" stroke="rgba(255,255,255,0.9)" strokeWidth="2.5" d="M0,34 Q240,14 480,30 Q720,46 960,28 Q1200,12 1440,30 Q1680,48 1920,30 Q2160,14 2400,32 Q2640,48 2880,30" />
         </svg>
       </div>
     </div>
